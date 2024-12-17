@@ -1,0 +1,239 @@
+/* ? poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --primary: #ffc108;
+  --font: #2c2c2c;
+  --bg: #f0f0f0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "poppins", sans-serif;
+  background-color: var(--bg);
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+/* ? navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 100px;
+  height: 80px;
+}
+
+nav .left a {
+  color: var(--font);
+  font-size: 30px;
+  font-weight: 800;
+}
+
+nav .right a {
+  color: var(--font);
+  margin: 0 20px;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+nav .right a:hover {
+  color: var(--primary);
+}
+
+nav .right a:last-child {
+  color: var(--bg);
+  background-color: var(--font);
+  padding: 10px 20px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+nav .right a:last-child:hover {
+  color: var(--bg);
+  background-color: var(--primary);
+}
+
+nav .right a span {
+  margin-left: 5px;
+}
+
+/* ? hero */
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 100px;
+  margin: 50px 0;
+  gap: 70px;
+}
+
+.hero-section .text {
+  flex: 5;
+}
+
+.hero-section .text h1 {
+  font-size: 80px;
+}
+
+.hero-section .text .link {
+  margin-top: 25px;
+}
+
+.hero-section .text .link a {
+  display: inline-block;
+  padding: 5px 10px;
+  color: var(--font);
+  border: 2px solid var(--font);
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.hero-section .text .link a:hover {
+  color: var(--primary);
+  border: 2px solid var(--primary);
+}
+
+.hero-section .text .link i {
+    padding-right: 5px;
+}
+
+.hero-section .text h1 span {
+  color: var(--primary);
+}
+
+.hero-section .img {
+  flex: 2;
+}
+
+.hero-section .img img {
+  width: 550px;
+}
+
+@media screen and (max-width: 1200px) {
+}
+
+/* ? responsive */
+@media screen and (max-width: 982px) {
+  /* ? navbar */
+  nav {
+    padding: 0 50px;
+  }
+
+  nav .right a {
+    font-size: 25px;
+  }
+
+  nav .right a:last-child {
+    color: var(--font);
+    background-color: transparent;
+    padding: 0;
+  }
+
+  nav .right a span {
+    display: none;
+  }
+
+  .hero-section {
+    gap: 20px;
+    padding: 0 40px;
+  }
+
+  .hero-section .text p {
+    font-size: 12px;
+  }
+
+  .hero-section .link a {
+    font-size: 13px;
+  }
+
+  .hero-section .text h1 {
+    font-size: 60px;
+    margin-bottom: 5px;
+  }
+
+  .hero-section .img img {
+    width: 400px;
+  }
+
+  nav .right a:last-child:hover {
+    color: var(--primary);
+    background-color: transparent;
+  }
+
+  .hero-section .text .link i {
+    padding-right: 3px;
+}
+}
+
+@media screen and (max-width: 740px) {
+  .hero-section {
+    flex-direction: column-reverse;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* ? navbar */
+  nav {
+    padding: 0 30px;
+  }
+
+  nav .right a {
+    font-size: 25px;
+  }
+
+  nav .right a:last-child {
+    color: var(--font);
+    background-color: transparent;
+    padding: 0;
+  }
+
+  nav .right a span {
+    display: none;
+  }
+
+  nav .right a {
+    color: var(--font);
+    margin: 0 10px;
+  }
+
+  .hero-section .text h1 {
+    font-size: 34px;
+  }
+
+  .hero-section .img img {
+    width: 280px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+}
